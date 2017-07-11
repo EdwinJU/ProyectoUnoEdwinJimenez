@@ -6,18 +6,6 @@ header{
 	background: #f2f2f2;
 
 }
-.color1{
-	background: #34495e;
-	color: #fff;
-}
-aside{
-	background: #c0392b;
-	color: #fff;
-}
-footer{
-	
-}
-
 img{  
   display:flex;
   margin:0 auto;
@@ -27,27 +15,5 @@ h1{
 display:flex;
   margin:0 auto;	
 }
-.Username{
-	width: 23%;
-    float: center;
-    
-}
-.Usertxt{
-	width: 23%;
-    float: center;
-}
 
-.Password{
-	width: 	5%;
-    float: center;
-}
-.Passwordtxt{
-	width: 5%;
-    float: center;
-}
-
-.container{
-	width: 5%;
-    float: center;
-}
 
