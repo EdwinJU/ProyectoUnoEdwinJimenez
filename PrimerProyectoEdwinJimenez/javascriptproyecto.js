@@ -49,3 +49,65 @@ users= [];
      });
 
 });
+
+
+
+//Guarda el ride en localstorage
+$(document).ready(function(){    
+    
+    $('#btnSaveR').click(function(){        
+        var ride = {
+               
+                name: $('#name').val(),
+                start: $('#start').val(),
+                end: $('#end').val(),
+                description: $('#comment').val(),
+                departure: $('#departure').val(),
+                estimate: $('#estimate').val(),
+                days: $('#days').val(),
+
+             
+               
+          };
+var rides = JSON.parse(localStorage.getItem('rides'));
+if(!rides){
+rides= [];
+
+}
+         rides.push(ride);
+        localStorage.setItem('rides', JSON.stringify(rides));
+  
+     
+     });
+
+});
+
+//Guarda el ride en sessionstorage
+$(document).ready(function(){    
+    
+    $('#btnSaveR').click(function(){        
+    var ride = {
+                name: $('#name').val(),
+                start: $('#start').val(),
+                end: $('#end').val(),
+                description: $('#comment').val(),
+                departure: $('#departure').val(),
+                estimate: $('#estimate').val(),
+                days: $('#days').val(),
+               
+          };
+var rides = JSON.parse(sessionStorage.getItem('rides'));
+if(!rides){
+rides= [];
+
+}
+         rides.push(ride);
+        sessionStorage.setItem('rides', JSON.stringify(rides));
+      
+     
+     });
+
+});
+
+
+
