@@ -54,10 +54,25 @@ users= [];
 
 //Guarda el ride en localstorage
 $(document).ready(function(){    
+
+      var users = JSON.parse(sessionStorage.getItem('users'));
+if(!users){
+users=[];
+}
+
+  var user_html = "";
+  for (var i = 0; i < users.length; i++) {
+    var u = users[i];
+
+
+    user_html = user_html +u.name;
+  }
+
     
     $('#btnSaveR').click(function(){        
         var ride = {
-               
+              
+                nombre: user_html.val(),
                 name: $('#name').val(),
                 start: $('#start').val(),
                 end: $('#end').val(),
@@ -110,4 +125,28 @@ rides= [];
 });
 
 
+function loadSession() {
 
+  var users = JSON.parse(sessionStorage.getItem('users'));
+if(!users){
+users=[];
+}
+
+  var user_html = "";
+  for (var i = 0; i < users.length; i++) {
+    var u = users[i];
+
+
+    user_html = user_html +u.name;
+    console.log(user_html);
+  }
+
+  $('#user_table').html(user_html);
+
+}
+
+
+
+//function deshabilitar(){
+//document.boti.btnSave.disabled=true;
+//}
