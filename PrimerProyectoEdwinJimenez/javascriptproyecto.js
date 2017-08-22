@@ -199,6 +199,7 @@ var users = JSON.parse(localStorage.getItem('users'));
 }
 
   var nombreUsu="";
+  var pass="";
 
   for (var i = 0; i < users.length; i++) {
     var u = users[i];
@@ -220,5 +221,33 @@ var users = JSON.parse(localStorage.getItem('users'));
  });
 });
 
+
+function verRides() {
+
+  var rides = JSON.parse(localStorage.getItem('rides'));
+if(!rides){
+alert("No hay rides")
+}
+
+  var ride_html = "";
+  var startIntro=document.getElementById('start').value;
+  var endIntro=document.getElementById('end').value;
+  var inicio="";
+  var fin="";
+  for (var i = 0; i < rides.length; i++) {
+    var r = rides[i];
+    inicio=r.start;
+    fin=r.end;
+
+    if (startIntro==inicio&&endIntro==fin) {
+      ride_html =ride_html+ "<tr><td>"+r.nombre + "<td><td>"+r.start + "<td><td>"+r.end;
+
+    }  
+    $('#rided_table').html(ride_html);
+  }
+
+  
+
+}
 
 
