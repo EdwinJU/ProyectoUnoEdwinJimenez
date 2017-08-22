@@ -184,6 +184,7 @@ rides=[];
   $('#ride_table').html(ride_html);
 
 }
+}
 
 
 $(document).ready(function(){    
@@ -212,15 +213,12 @@ var users = JSON.parse(localStorage.getItem('users'));
     if (usernameIntro==nombreUsu&&passwordIntro==pass) {
       alert("Estas Logueado");
       window.location.replace("file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/CrearRide.html");
-    errorElement.setAttribute("style","display:none;");
+    //errorElement.setAttribute("style","display:none;");
     }
     
        } 
-
  });
-
 });
-
 
 
 
