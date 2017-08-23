@@ -37,7 +37,6 @@
 				</nav>
 			</div>
 			<div class="container">
-				<div class="firstname">
 					
 					<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
 						<h1><b>Edit Rides</b></h1>
@@ -52,7 +51,6 @@
 						
 					</div>
 					
-				</div>
 			</div>
 			
 			</hgroup>
@@ -60,7 +58,6 @@
 		<br>
 		<br>
 		<div class="container">
-			<div class="Ride">
 				
 				<div class="col-xs- col-sm- col-md- col-lg-12">
 					
@@ -69,17 +66,13 @@
 					</p>
 					
 				</div>
-			</div>
 		</div>
 		
 		<div class="container">
-			<div class="Ridetxt">
 				<div class="col-xs-12 col-sm-6 col-md-12">
 					
-					<input type="text" placeholder="introduce a ride name">
-					
+<input type="text" placeholder="introduce a ride name" id="nameEdit">					
 				</div>
-			</div>
 		</div>
 		<br>
 		
@@ -87,104 +80,74 @@
 		
 		<br>
 		<div class="container">
-			<div class="Start">
 				
 				<div class="col-xs- col-sm- col-md- col-lg-6">
 					
 					<p>
 						<b>Start From</b>
 					</p>
-					<input type="text" placeholder="Introduce the Start From">
-					
+                   <input type="text" placeholder="Introduce the Start From" id="startEdit">					
 				</div>
-				<div class="End">
 					<div class="col-xs-12 col-sm-6 col-md-6">
 						<p>
 							<b>End</b>
 						</p>
-						<input type="text" placeholder="Introduce the End">
+						
+						<input type="text" placeholder="Introduce the End" id="endEdit">
 					</div>
-				</div>
-			</div>
 		</div>
 		<br>
 		<div class="container">
-			<div class="Descripcion">
 				
 				<div class="col-xs- col-sm- col-md- col-lg-12">
 					
 					<div class="form-group">
 						<label for="comment">Descripcion:</label>
-						<textarea class="form-control" rows="5" id="comment"></textarea>
+						<textarea class="form-control" rows="5" id="commentEdit"></textarea>
 					</div>
 				</div>
-			</div>
 			<h2><b>When</b></h2>
 			<div class="container">
-				<div class="Start">
 					
 					<div class="col-xs- col-sm- col-md- col-lg-6">
 						
 						<p>
 							<b>Departure</b>
 						</p>
-						<input type="text" placeholder="Introduce an hour">
+						<input type="text" placeholder="Introduce an hour" id="departureEdit">
 						<p>
 							<b>Estimate Arrival</b>
 						</p>
-						<input type="text" placeholder="Introduce an hour">
+						<input type="text" placeholder="Introduce an hour" id="estimateEdit">
 						
 					</div>
 					
-					<div class="Start">
 						
 						<div class="col-xs- col-sm- col-md- col-lg-6">
-							<div class="checkbox">
-								<label><input type="checkbox" value="">Monday</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="">Tuesday</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="">Wednesday</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="">Thursday</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="">Friday</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="">Saturdar</label>
-							</div>
-							<div class="checkbox disabled">
-								<label><input type="checkbox" value="">Sunday</label>
-							</div>
+
+						<p>
+							<b>Days</b>
+						</p>
+					<input type="text" placeholder="Introduce the days" id="daysEdit">
 							
 						</div>
-					</div>
 					
 					
 					
-				</div>
 			</div>
 		</div>
 		<br>
 		<div class="container">
-			<div class="link">
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<p>
 						<a href="file:///C:/Users/Alfredo/Documents/GitHub/ProyectoUnoEdwinJimenez/ProyectoUnoEdwinJimenez/PrimerProyectoEdwinJimenez/dashboard.html">Cancel</a>
 						
 					</p>
 				</div>
-			</div>
-			<div class="boton">
 				<div class="col-xs-12 col-sm-6 col-md-6	">
 					
-					<button type="button" class="btn btn-primary">Save</button>
+				<button type="submit" class="btn btn-primary" id="btnSaveEdit">Save</button>
 				</div>
-			</div>
 		</div>
 		<br>
 		
