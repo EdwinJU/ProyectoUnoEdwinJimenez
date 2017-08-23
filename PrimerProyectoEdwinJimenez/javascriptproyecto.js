@@ -429,3 +429,50 @@ extraInfos= [];
   
 
 });
+
+
+//Eliminar Ride
+$(document).ready(function(){    
+    $('#btnDelete').click(function(){                
+                                                   
+     
+     var rides = JSON.parse(localStorage.getItem('rides'));
+     var nombreRide="";
+      var nameIntro = document.getElementById('nameEdit').value;
+
+      if(!rides){
+   rides=[];
+   alert("Debes no hay rides registrados");
+}
+
+     for (var i = 0; i < rides.length; i++) {
+    var r = rides[i];
+
+    nombreRide=r.name;
+    console.log(nombreRide);
+        console.log(nameIntro);
+
+       if (nameIntro==nombreRide) {
+
+         rides.pop(); 
+           //localStorage.setItem('rides', JSON.stringify(rides));
+           localStorage.removeItem('rides', JSON.stringify(nombreRide));
+           localStorage.removeItem('name', JSON.stringify(rides));
+           localStorage.removeItem('start', JSON.stringify(rides));
+                      localStorage.removeItem('end', JSON.stringify(rides));
+                      localStorage.removeItem('departure', JSON.stringify(rides));
+                      localStorage.removeItem('estimate', JSON.stringify(rides));
+                      localStorage.removeItem('description', JSON.stringify(rides));
+                      localStorage.removeItem('days', JSON.stringify(rides));
+
+
+break;
+
+      }
+
+  
+  }
+      
+
+    });   
+});
