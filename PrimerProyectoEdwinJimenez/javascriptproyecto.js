@@ -19,6 +19,7 @@ users= [];
 }
          users.push(user);
         localStorage.setItem('users', JSON.stringify(users));
+        alert("Usuario Guardado");
   
      
      });
@@ -78,6 +79,7 @@ rides= [];
 }
          rides.push(ride);
         localStorage.setItem('rides', JSON.stringify(rides));
+        alert("Ride Guardado");
 
       }else{
         alert("El usuario Logueado no existe");
@@ -353,6 +355,8 @@ $(document).ready(function(){
                 datosEdit[i].days=daysIntro;
                 localStorage.setItem("rides", JSON.stringify(datosEdit));
                 console.log("Sirvio")
+                alert("Cambios Guardados");
+                break;
                 
             }else{
               alert("Debes loguearte o registrarte primero");
